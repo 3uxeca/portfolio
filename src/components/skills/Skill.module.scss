@@ -1,0 +1,20 @@
+@import '@/styles/variable.scss';
+
+.skill {
+  @include flex;
+  @include col;
+  row-gap: 10px;
+  width: 108px;
+  height: 108px;
+
+  &:hover {
+    cursor: pointer;
+    img {
+      filter: brightness(0.8);
+    }
+
+    .name {
+      color: #bdbdbd;
+    }
+  }
+}

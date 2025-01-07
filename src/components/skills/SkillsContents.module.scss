@@ -1,0 +1,45 @@
+@import '@/styles/variable.scss';
+
+.wrapper {
+  @include flex;
+  @include col;
+  @include fs;
+  padding: 120px;
+
+  @include desktop {
+    height: calc(100vh - 72px);
+  }
+
+  @include mobileLayout {
+    padding: 120px 60px;
+  }
+}
+
+.titleWrap {
+  @include flex;
+  @include col;
+  @include top;
+  row-gap: 1em;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 2em;
+  .title {
+    font-size: 3em;
+    background: linear-gradient(90deg, #6b88ff, #f44ef6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;    
+  }
+  .desc {
+    color: #fff;
+  }
+}
+
+.skillsWrap {
+  @include flex;
+  @include fs;
+  @include top;  
+  row-gap: 1em;
+}

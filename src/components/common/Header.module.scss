@@ -1,0 +1,39 @@
+@import '@/styles/variable.scss';
+
+.header {
+    @include flex;
+    @include sb;
+    width: 100%;
+    padding: 20px 40px;
+    top: 0;  
+    position: fixed;
+    z-index: 3;  
+
+    // text-shadow
+    .title {
+      font-size: 2em;
+      color: #dc65ff;
+      text-shadow: 0.0625em 0.0625em #2c3043, 0.125em 0.125em #2f2758;
+    }
+    // linear-gradient
+    // .title {
+    //   background: linear-gradient(90deg, #00ccff, #ccff00);
+    //   background-clip: text;
+    //   -webkit-background-clip: text;
+    //   color: transparent;
+    //   box-decoration-break: clone;
+    //   -webkit-box-decoration-break: clone;
+    // }
+}
+
+.nav {
+  @include flex;
+  @include sb;
+  column-gap: 16px;
+  & > a {
+    text-shadow: 0.0625em 0.0625em #2c3043, 0.125em 0.125em #2f2758;
+    &:hover {
+      color: #dc65ff;
+    }
+  }
+}

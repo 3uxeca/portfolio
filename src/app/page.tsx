@@ -12,7 +12,7 @@ export default function Home() {
         <div>현재 이 페이지는 작업중 입니다.</div>
         <div>빠른 시일 내에 오픈하도록 하겠습니다. 감사합니다 :)</div>
         <div className={styled.download}>
-          <a href='/files/portfolio_v1.0.1.pdf' type='application/pdf' download>★☆ 포트폴리오 pdf 다운로드 (클릭!!) ☆★</a>
+          <a href='/files/portfolio_v1.0.1.pdf' type='application/pdf' download><span className={styled.em}>★☆</span> 포트폴리오 pdf 다운로드 (클릭!!) <span className={styled.em}>☆★</span></a>
         </div>
       </div>
     </main>

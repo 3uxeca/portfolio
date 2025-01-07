@@ -1,0 +1,57 @@
+@import '@/styles/variable.scss';
+
+.wrapper {
+  @include flex;
+  @include sb;
+  width: 100%;
+  height: calc(100vh - 72px);
+  padding: 40px 120px;
+  
+  @include mobile {
+    @include col;
+    padding: 12vh 10vw;
+  }
+}
+
+.image {
+  width: 320px;
+  @include mobile {
+    padding-bottom: 3vh;
+  }
+  img {
+    border-radius: 8px;
+  }
+}
+
+.contents {
+  color: #fff;
+  width: calc(100% - 340px);
+
+  @include mobile {
+    width: 100%;
+  }
+
+  .mainTitle {
+    // color: #dc65ff;
+    // text-shadow: 0.0625em 0.0625em #2c3043, 0.125em 0.125em #2f2758;
+    font-size: 3em;
+    padding-bottom: 2vh;
+    // linear-gradient
+      // background: linear-gradient(90deg, #00ccff, #ccff00);
+      background: linear-gradient(90deg, #6b88ff, #f44ef6);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    @include mobile {
+      font-size: 2em;
+      padding-bottom: 3vh;
+      text-align: center;
+    }
+  }
+
+  & > p {
+    line-height: 30px;
+  }
+}
