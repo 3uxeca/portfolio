@@ -30,26 +30,28 @@ export default function Header() {
   };  
   return (
     <header className={styled.header}>
-      <Link href="/">
-        <div className={styled.title}>3uxeca</div>
-      </Link>
-      <nav className={styled.nav}>
-        {/* <Link href='/about'>About</Link>
-        <Link href='/skills'>Skills</Link>
-        <Link href='/projects'>Projects</Link>
-        <Link href='/contact'>Contact</Link> */}
-        <ul
-          className={styled.routes}
-        >
-          {["about", "skills", "projects", "contact"].map((route) => (
-            <li key={route}>
-              <a href={`#${route}`} onClick={() => handleLinkClick(`#${route}`)}>
-                {route.charAt(0).toUpperCase() + route.slice(1)}
-              </a>
-            </li>
-          ))}
-        </ul>        
-      </nav>
+      <div className={styled.wrapper}>
+        <Link href="/">
+          <div className={styled.title}>3uxeca</div>
+        </Link>
+        <nav className={styled.nav}>
+          {/* <Link href='/about'>About</Link>
+          <Link href='/skills'>Skills</Link>
+          <Link href='/projects'>Projects</Link>
+          <Link href='/contact'>Contact</Link> */}
+          <ul
+            className={styled.routes}
+          >
+            {["about", "skills", "projects", "contact"].map((route) => (
+              <li key={route}>
+                <a href={`#${route}`} onClick={() => handleLinkClick(`#${route}`)}>
+                  {route.charAt(0).toUpperCase() + route.slice(1)}
+                </a>
+              </li>
+            ))}
+          </ul>        
+        </nav>
+      </div>
     </header>
   )
 }

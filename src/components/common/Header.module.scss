@@ -1,13 +1,19 @@
 @import '@/styles/variable.scss';
 
 .header {
-    @include flex;
-    @include sb;
+
     width: 100%;
     padding: 20px 40px;
     top: 0;  
     position: fixed;
     z-index: 3;  
+
+    .wrapper {
+      @include flex;
+      @include sb;      
+      @include maxWidthBox;
+      width: 100%;
+    }
 
     // text-shadow
     .title {

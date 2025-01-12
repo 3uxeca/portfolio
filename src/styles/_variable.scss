@@ -122,3 +122,8 @@ $modal-zIndex: 30;
   box-sizing: border-box;
   cursor: pointer;
 }
+
+@mixin maxWidthBox {
+  max-width: 1536px;
+  margin: 0 auto;
+}

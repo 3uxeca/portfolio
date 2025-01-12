@@ -1,6 +1,7 @@
 @import '@/styles/variable.scss';
 
 .footer {
+  @include maxWidthBox;
   @include flex;
   padding: 20px 40px;
 
