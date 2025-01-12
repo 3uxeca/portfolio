@@ -56,6 +56,7 @@
       height: 17%;
       // background: rgba(0, 0, 0, 0.38);
       background-image: linear-gradient(to bottom, #1f2134, #202f4a 37%, #1d285f 73%, #181c30);
+      
       border-radius: 20px;
     }
     &::-webkit-scrollbar-track {
@@ -88,4 +89,22 @@
   
   ul {
     list-style: none;
+  }
+
+  .flexColBox {
+    @include flex;
+    @include col;
+    height: 100vh;
+    .title {
+      font-size: 3em;
+      background: linear-gradient(90deg, #6b88ff, #f44ef6);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;      
+    }
+    .desc {
+      margin-top: 3vh;
+    }
   }

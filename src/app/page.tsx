@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "./page.module.scss";
-import AboutContents from "@/components/about/AboutContents";
-import SkillsContents from "@/components/skills/SkillsContents";
+import AboutPage from "./about/page";
+import SkillsPage from "./skills/page";
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
           <a href='/files/portfolio_v1.0.1.pdf' type='application/pdf' download><span className={styled.em}>★☆</span> 포트폴리오 pdf 다운로드 (클릭!!) <span className={styled.em}>☆★</span></a>
         </div>
       </div> */}
-        <AboutContents />
-        <SkillsContents />
+        <AboutPage />
+        <SkillsPage />
     </main>
   );
 }
