@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styled from "./page.module.scss";
+import AboutContents from "@/components/about/AboutContents";
+import SkillsContents from "@/components/skills/SkillsContents";
 
 export default function Home() {
   return (
     <main className={styled.wrapper}>
-      <div className={styled.main}>
+      {/* <div className={styled.main}>
         <div className={styled.nyang} />
         <div className={styled.title}>안녕하세요!</div>
         <div className={styled.title}><span className={styled.em}>소통</span>하는 <span className={styled.em}>웹 프론트엔드</span> 개발자 <span className={styled.em}>사지혜</span> 입니다.</div>
@@ -14,7 +16,9 @@ export default function Home() {
         <div className={styled.download}>
           <a href='/files/portfolio_v1.0.1.pdf' type='application/pdf' download><span className={styled.em}>★☆</span> 포트폴리오 pdf 다운로드 (클릭!!) <span className={styled.em}>☆★</span></a>
         </div>
-      </div>
+      </div> */}
+        <AboutContents />
+        <SkillsContents />
     </main>
   );
 }

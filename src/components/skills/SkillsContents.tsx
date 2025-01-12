@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import styled from '@/components/skills/SkillsContents.module.scss'
 import Skill from './Skill'
@@ -31,7 +33,7 @@ const SkillsContents = (props: Props) => {
   ];
   
   return (
-    <div className={styled.wrapper}>
+    <div id='skills' className={styled.wrapper}>
       <div className={styled.titleWrap}>
         <div className={styled.title}>My skills</div>
         <div className={styled.desc}>사용자 중심의 웹 경험을 위해 그동안 사용했던 웹 기술을 확인해보세요.<br/></div>

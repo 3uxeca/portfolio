@@ -4,8 +4,8 @@
   @include flex;
   @include sb;
   width: 100%;
-  height: calc(100vh - 72px);
-  padding: 40px 120px;
+  height: 100vh;
+  padding: 120px;
   
   @include mobile {
     @include col;

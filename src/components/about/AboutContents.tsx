@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import CustomImage from '../common/CustomImage'
 import Image from 'next/image'
@@ -7,7 +9,7 @@ type Props = {}
 
 const AboutContents = (props: Props) => {
   return (
-    <div className={styled.wrapper}>
+    <div id='about' className={styled.wrapper}>
       <div className={styled.image}>
         <CustomImage src={'/images/img/jhsa3.jpeg'} alt='Profile Image' width='300px' />
       </div>
