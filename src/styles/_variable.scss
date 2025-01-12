@@ -127,3 +127,67 @@ $modal-zIndex: 30;
   max-width: 1536px;
   margin: 0 auto;
 }
+
+
+@mixin overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@mixin fadeIn {
+  animation: fadeIn 0.4s ease forwards;
+}
+@mixin fadeOut {
+  animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@mixin slideInRight {
+  animation: slideInRight 0.5s ease forwards;
+}
+
+@mixin slideOutRight {
+  animation: slideOutRight 0.5s ease forwards;
+}

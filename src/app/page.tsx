@@ -2,6 +2,8 @@ import Image from "next/image";
 import styled from "./page.module.scss";
 import AboutPage from "./about/page";
 import SkillsPage from "./skills/page";
+import ContactPage from "./contact/page";
+import ProjectsPage from "./projects/page";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       </div> */}
         <AboutPage />
         <SkillsPage />
+        <ProjectsPage />
+        <ContactPage />
     </main>
   );
 }

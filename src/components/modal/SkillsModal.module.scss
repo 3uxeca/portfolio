@@ -1,0 +1,33 @@
+@import '@/styles/variable.scss';
+
+
+.wrapper {
+  min-width: 320px;
+}
+
+.header {
+  @include flex;
+  @include fe;
+  width: 100%;
+}
+
+.skillTitle {
+  @include flex;
+  @include col;
+  row-gap: 1vh;
+  font-size: 2em;
+  padding-bottom: 2vh;
+  margin-bottom: 2vh;
+  border-bottom: 1px solid #6f6f6f;
+  .name {
+    margin-top: 1vh;
+  }
+}
+
+.skillInfo {
+  @include flex;
+  @include col;
+  @include top;
+  padding-top: 2vh;
+  row-gap: 3vh;
+}

@@ -5,10 +5,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  :root {
+    --font-neoDunggeunmoPro: 'NeoDunggeunmoPro', sans-serif;
+  }  
   
   html {
     overflow-x: hidden;
     font-family:
+      var(--font-neoDunggeunmoPro),
       'NeoDunggeunmoPro',
       'Pretendard',
       -apple-system,
@@ -65,11 +70,12 @@
   }
   
   button,
-  input {
+  input,
+  textarea {
     border: none;
     outline: none;
     background-color: transparent;
-    font-family: 'NeoDunggeunmoPro', 'Pretendard', sans-serif;
+    font-family: var(--font-neoDunggeunmoPro), 'NeoDunggeunmoPro', 'Pretendard', sans-serif;
     font-size: 100%;
   
     appearance: none;

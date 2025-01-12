@@ -1,5 +1,6 @@
 @import '@/styles/variable.scss';
 
+
 .wrapper {
   @include flex;
   @include col;
@@ -34,11 +35,4 @@
   .desc {
     color: #fff;
   }
-}
-
-.skillsWrap {
-  @include flex;
-  @include fs;
-  @include top;  
-  row-gap: 1em;
 }

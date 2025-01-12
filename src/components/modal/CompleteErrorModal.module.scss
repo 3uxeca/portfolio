@@ -1,0 +1,42 @@
+@import '@/styles/variable.scss';
+
+.wrapper {
+  width: 454px;
+  -webkit-backdrop-filter: blur(30px) !important;
+  backdrop-filter: blur(30px) !important;
+  box-shadow: 2px 2px 30px 0 #00021d;
+  &.error {
+    border: solid 1px #673433;
+    background-image: linear-gradient(138deg, #3e0101 12%, #000 71%);
+  }
+  &.complete {
+    border: solid 1px #004a47;
+    background-image: linear-gradient(133deg, #002b29 14%, #000 68%);
+  }
+}
+
+.header {
+  @include flex;
+  @include sb;
+  padding-bottom: 13px;
+
+  .title {
+    @include flex;
+    @include fs;
+    .icon {
+      margin-right: 8px;
+    }
+    .text {
+      color: #f2f2f2;
+      font-weight: 600;
+      letter-spacing: 0.16px;
+    }
+  }
+}
+
+.contents {
+  font-size: 13px;
+  color: #e2e2e2;
+  white-space: pre-line;
+  line-height: 19px;
+}

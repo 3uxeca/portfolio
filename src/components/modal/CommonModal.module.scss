@@ -1,0 +1,119 @@
+@import '@/styles/variable.scss';
+
+.header {
+  @include flex;
+  @include sb;
+}
+
+.btnClose {
+  @include btnform;
+  @include background;
+  background-image: url('/images/icons/icon-modal-close.png');
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -2px;
+  right: -4px;
+}
+
+.title {
+  @include flex;
+  @include fs;
+  column-gap: 8px;
+  .icon {
+    @include background;
+    width: 24px;
+    height: 24px;
+    &.face {
+      background-image: url('/images/icons/icon-modal-face.svg');
+    }
+    &.password {
+      background-image: url('/images/icons/auth/icon-modal-password.svg');
+    }
+    &.system {
+      background-image: url('/images/icons/icon-modal-system.svg');
+    }
+    &.anls {
+      background-image: url('/images/icons/icon-modal-anls.svg');
+    }
+    &.download {
+      background-image: url('/images/icons/icon-modal-download.svg');
+    }
+    &.warning {
+      background-image: url('/images/icons/icon-face-modal-error.svg');
+    }
+  }
+  font-weight: 500;
+}
+
+.body {
+  margin: 10px 0 0;
+  color: #e2e2e2;
+  font-size: 1em;
+  line-height: 18px;
+  white-space: pre-line;
+}
+
+.btnList {
+  display: flex;
+  gap: 14px;
+  margin: 20px 0 0;
+}
+.btnList > li {
+  flex: 1;
+}
+.btnList button {
+  @include btnform;
+  width: 190px;
+  height: 28px;
+  border-radius: 4px;
+  color: #e2e2e2;
+  font-size: 12px;
+  border: solid 1px #2063bb;
+  background-color: #091731;
+
+  &.warning {
+    border: solid 1px #c75151;
+    background-color: #1e0d17;
+    &:hover {
+      box-shadow: 0 3px 6px 0 rgba(59, 13, 34, 0.41);
+      border: solid 1px #c75151;
+      background-color: rgba(30, 13, 23, 0.2);
+    }
+  }
+
+  &.cancel {
+    border: solid 1px #566271;
+    background-color: #161921;
+  }
+
+  &:hover {
+    // background-color: #4d61ff;
+    box-shadow: 0 3px 6px 0 rgba(13, 39, 59, 0.41);
+    border: solid 1px #2063bb;
+    background-color: rgba(46, 108, 162, 0.2);
+  }
+
+  &::after {
+    content: '';
+    width: 85%;
+    height: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    background-color: rgba(77, 97, 255, 0.41);
+    // filter: blur(22.8px);
+    filter: blur(14.8px);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

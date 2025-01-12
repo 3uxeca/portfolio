@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import '@/styles/common.scss';
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import ModalProvider from "@/components/providers/ModalProvider";
 
 export const metadata: Metadata = {
   title: "프론트엔드 | 사지혜",
@@ -16,7 +17,8 @@ const neoDunggeunmoPro = localFont({
       path: '../../public/fonts/NeoDunggeunmoPro/NeoDunggeunmoPro-Regular.woff2',
       weight: '400',
     }
-  ]
+  ],
+  variable: '--font-neoDunggeunmoPro',  
 });
 
 const pretendard = localFont({
@@ -48,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={neoDunggeunmoPro.className}>
+        <ModalProvider />
         <Header />
         <main>{children}</main>
         <Footer />

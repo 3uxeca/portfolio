@@ -5,6 +5,7 @@
   @include col;
   @include fs;
   padding: 120px;
+  padding-bottom: 0;
 
   @include desktop {
     height: 100vh;
@@ -18,10 +19,6 @@
 .titleWrap {
   @include flex;
   @include col;
-  // @include top;
-  row-gap: 1em;
-  width: 100%;
-  padding-bottom: 2em;
   .title {
     font-size: 3em;
     background: linear-gradient(90deg, #6b88ff, #f44ef6);
@@ -31,14 +28,16 @@
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;    
   }
-  .desc {
-    color: #fff;
-  }
 }
 
-.skillsWrap {
+.descWrap {
   @include flex;
-  @include fs;
-  @include top;  
-  row-gap: 1em;
+  @include sb;
+  margin-top: 2vh;
+  column-gap: 20px;
+  .desc {
+    @include flex;
+    @include fs;
+    column-gap: 10px;
+  }  
 }
