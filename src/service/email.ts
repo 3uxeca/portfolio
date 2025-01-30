@@ -5,7 +5,7 @@ const transporter = nodemailer.createTransport({
   service: 'naver',
   host: 'smtp.naver.com',
   port: 465,
-  // secure: true,
+  secure: true,
   auth: {
     user: process.env.AUTH_USER,
     pass: process.env.AUTH_PASS,
