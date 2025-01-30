@@ -4,8 +4,10 @@ import nodemailer from 'nodemailer';
 const transporter = nodemailer.createTransport({
   service: 'naver',
   host: 'smtp.naver.com',
-  port: 465,
-  secure: true,
+  // port: 465,
+  // secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.AUTH_USER,
     pass: process.env.AUTH_PASS,
