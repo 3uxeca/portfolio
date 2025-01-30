@@ -19,7 +19,7 @@ export async function sendEmail({ subject, from, message }: Form) {
     html: `
     <h1>${subject}</h1>
     <div>${message}</div>
-    <br/>
+    <br/><br/>
     <p>보낸 사람 : ${from}</p>
     `,
   };
