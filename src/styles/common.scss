@@ -83,6 +83,17 @@
     border-radius: 0;
     -webkit-border-radius: 0;
   }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:active {
+    -webkit-animation: autofill 0s forwards;
+    animation: autofill 0s forwards;
+    box-shadow: 2px 2px 30px 0 #00021d, 0 0 0 1000px #131429 inset !important;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    caret-color: #fff;
+  }  
   
   button {
     cursor: pointer;
